@@ -1,3 +1,12 @@
+<img width="1894" height="915" alt="image" src="https://github.com/user-attachments/assets/d6bd1a0c-4845-4ba7-ab44-3092825a8dd4" />
+
+
+
+
+
+
+
+
 # NLP Lab — Laboratório de Linguagem e Inteligência Artificial
 
 > **Explore a linguagem. Compreenda a inteligência artificial. Experimente o PLN.**
