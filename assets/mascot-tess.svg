@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+<title id="title">Tess, personagem do NLP Lab</title><desc id="desc">Personagem robótico Tess do NLP Lab, com visor luminoso e antenas digitais.</desc>
+<defs>
+ <linearGradient id="shell" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#70a7ff"/><stop offset=".52" stop-color="#4167cf"/><stop offset="1" stop-color="#28d8c9"/></linearGradient>
+ <linearGradient id="fin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc56b"/><stop offset="1" stop-color="#ef7e6b"/></linearGradient>
+ <linearGradient id="belly" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffaff"/><stop offset="1" stop-color="#ccecff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="110" cy="195" rx="65" ry="12" fill="#040817" opacity=".28"/>
+<path d="M57 75 25 46Q18 42 19 53L24 91Q39 105 66 97Z" fill="url(#fin)" stroke="#1b2852" stroke-width="7" stroke-linejoin="round"/>
+<path d="M162 75 195 46Q202 42 201 53L196 91Q181 105 154 97Z" fill="url(#fin)" stroke="#1b2852" stroke-width="7" stroke-linejoin="round"/>
+<path d="M80 39Q110 8 140 39" fill="none" stroke="#40f5ec" stroke-width="7" stroke-linecap="round"/>
+<circle cx="110" cy="28" r="9" fill="#ff69d0" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+<path d="M64 160Q50 175 57 190L84 184 95 168M156 160Q170 175 163 190L136 184 125 168" fill="#293b7b" stroke="#141d43" stroke-width="6" stroke-linejoin="round"/>
+<path d="M59 83Q60 46 110 43Q160 46 161 83L155 149Q150 184 110 188Q70 184 65 149Z" fill="url(#shell)" stroke="#17244c" stroke-width="8"/>
+<path d="M76 100Q78 72 110 71Q142 72 144 100L140 143Q135 166 110 168Q85 166 80 143Z" fill="url(#belly)" stroke="#344b8a" stroke-width="4"/>
+<ellipse cx="94" cy="116" rx="8" ry="12" fill="#15203e"/><ellipse cx="126" cy="116" rx="8" ry="12" fill="#15203e"/>
+<circle cx="96" cy="112" r="3" fill="#fff"/><circle cx="128" cy="112" r="3" fill="#fff"/>
+<path d="M101 139Q110 149 119 139" fill="none" stroke="#e64fae" stroke-width="5" stroke-linecap="round"/>
+<circle cx="78" cy="137" r="6" fill="#ff8bcc" opacity=".85"/><circle cx="142" cy="137" r="6" fill="#ff8bcc" opacity=".85"/>
+<path d="M46 109 34 120 46 131M174 109 186 120 174 131" fill="none" stroke="#38f4eb" stroke-width="5" stroke-linecap="round"/>
+<rect x="92" y="177" width="36" height="13" rx="6" fill="#202f67" stroke="#17244c" stroke-width="3"/>
+<circle cx="110" cy="183" r="4" fill="#48fff1" filter="url(#glow)"/>
+</svg>

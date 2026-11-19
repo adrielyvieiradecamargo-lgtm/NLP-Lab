@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="NLP Lab: laboratório educacional autoral para explorar Linguística, Processamento de Linguagem Natural e Inteligência Artificial." />
+  <title>NLP Lab — Laboratório de Linguagem e IA</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cyberpunk.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true"><span>n</span><i></i></div>
+        <div><div class="brand-name">NLP<span>LAB</span></div><div class="brand-sub">LINGUAGEM & INTELIGÊNCIA</div></div>
+      </div>
+      <div class="sidebar-label">AMBIENTE DE APRENDIZAGEM</div>
+      <nav class="primary-nav">
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span> Visão geral</button>
+        <button class="nav-item" data-view="explore"><span class="nav-icon">◈</span> Explorar o PLN</button>
+        <button class="nav-item" data-view="trail"><span class="nav-icon">◎</span> Trilha de aprendizagem <span class="nav-count">08</span></button>
+        <button class="nav-item" data-view="lab"><span class="nav-icon">⌘</span> Laboratório</button>
+        <button class="nav-item" data-view="library"><span class="nav-icon">▤</span> Biblioteca</button>
+        <button class="nav-item" data-view="progress"><span class="nav-icon">↗</span> Meu progresso</button>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-label">SUA JORNADA</div>
+      <div class="sidebar-progress-card">
+        <div class="progress-card-top"><span>Nível <b id="side-level">1</b></span><span class="mono" id="side-xp">0 XP</span></div>
+        <div class="xp-track"><div class="xp-fill" id="side-xp-fill"></div></div>
+        <div class="progress-card-bottom"><span id="side-level-name">Explorador</span><span id="side-next-xp">100 XP para o próximo</span></div>
+      </div>
+      <div class="sidebar-footer">
+        <div class="footer-mark">PROJETO AUTORAL</div>
+        <p>Um espaço para compreender como a linguagem encontra a computação.</p>
+        <a href="documentation/concepcao.md" target="_blank" rel="noopener">Sobre o projeto ↗</a>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <div class="breadcrumb"><span>NLP LAB</span><b>/</b><strong id="breadcrumb-current">Visão geral</strong></div>
+        <div class="topbar-actions">
+          <span class="status-dot"></span><span class="system-status">SISTEMA ONLINE</span>
+          <button class="icon-button" id="help-button" aria-label="Sobre o NLP Lab" title="Sobre o NLP Lab">?</button>
+          <button class="avatar-button" id="profile-button" aria-label="Ver perfil de aprendizagem">NL</button>
+        </div>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="view active" id="view-home" aria-labelledby="home-title">
+          <div class="hero-panel">
+            <div class="hero-grid"></div>
+            <div class="hero-copy">
+              <div class="eyebrow light"><span class="eyebrow-line"></span> LABORATÓRIO DE LINGUAGEM E IA</div>
+              <h1 id="home-title">A linguagem é humana.<br><em>O processamento, computacional.</em></h1>
+              <p>Explore como computadores representam, analisam e geram linguagem. Aprenda os fundamentos do PLN e experimente conceitos com dados em português.</p>
+              <div class="hero-actions"><button class="btn btn-primary" data-go="trail">Começar a trilha <span>→</span></button><button class="btn btn-ghost-light" data-go="explore">Explorar conteúdos</button></div>
+              <div class="hero-meta"><span><i></i> 8 módulos progressivos</span><span><i></i> Experimentos no navegador</span><span><i></i> Português brasileiro</span></div>
+            </div>
+            <div class="hero-visual" aria-label="Visualização abstrata de palavras conectadas em uma rede semântica">
+              <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div>
+              <svg class="network-svg" viewBox="0 0 440 360" role="img" aria-label="Nós e conexões representando relações entre palavras">
+                <g stroke="rgba(137,174,255,.28)" stroke-width="1.4" fill="none"><path d="M78 166 L170 80 L269 123 L355 65 M78 166 L188 263 L302 236 L355 65 M170 80 L188 263 M269 123 L302 236 M78 166 L269 123 M170 80 L355 65 M188 263 L355 65"/><path d="M269 123 L388 190 L302 236" stroke-dasharray="4 6"/></g>
+                <g fill="#76a6ff"><circle cx="78" cy="166" r="4"/><circle cx="170" cy="80" r="4"/><circle cx="269" cy="123" r="4"/><circle cx="355" cy="65" r="4"/><circle cx="188" cy="263" r="4"/><circle cx="302" cy="236" r="4"/><circle cx="388" cy="190" r="3"/></g>
+                <g class="network-labels" font-family="DM Mono" font-size="10"><text x="39" y="151">texto</text><text x="142" y="59">tokens</text><text x="245" y="103">contexto</text><text x="326" y="43">sentido</text><text x="154" y="289">modelo</text><text x="287" y="260">linguagem</text></g>
+                <circle cx="269" cy="123" r="23" fill="rgba(74,133,255,.14)" stroke="rgba(110,160,255,.52)"/><circle cx="269" cy="123" r="8" fill="#78a7ff"/>
+              </svg>
+              <div class="visual-chip chip-one"><span class="chip-dot"></span> linguagem natural</div>
+              <div class="visual-chip chip-two">01 <b>→</b> 08 · percurso</div>
+            </div>
+          </div>
+
+          <div class="section-heading home-heading"><div><div class="eyebrow">COMECE POR AQUI</div><h2>Um campo, muitas possibilidades.</h2><p>Do texto bruto às representações que alimentam sistemas inteligentes.</p></div><button class="text-link" data-go="explore">Ver todos os temas ↗</button></div>
+          <div class="feature-grid">
+            <article class="feature-card feature-blue"><div class="feature-icon">⌁</div><div class="feature-kicker">FUNDAMENTOS</div><h3>Entenda a linguagem</h3><p>Explore as estruturas linguísticas que ajudam a descrever como produzimos e interpretamos enunciados.</p><button data-go="explore" class="card-link">Explorar fundamentos <span>→</span></button></article>
+            <article class="feature-card feature-violet"><div class="feature-icon">◫</div><div class="feature-kicker">EXPERIMENTAÇÃO</div><h3>Teste com textos</h3><p>Insira frases, observe tokens, compare n-gramas e veja como representações simples são construídas.</p><button data-go="lab" class="card-link">Abrir laboratório <span>→</span></button></article>
+            <article class="feature-card feature-dark"><div class="feature-icon">◎</div><div class="feature-kicker">PERCURSO FORMATIVO</div><h3>Aprenda por missões</h3><p>Avance por oito módulos, resolva desafios e construa uma compreensão progressiva do PLN.</p><button data-go="trail" class="card-link">Ver trilha <span>→</span></button></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="panel journey-panel"><div class="panel-heading"><div><div class="eyebrow">SEU PERCURSO</div><h3>Continue de onde parou</h3></div><span class="pill pill-neutral" id="home-completion">0% concluído</span></div><div class="journey-body"><div class="journey-ring" id="home-ring"><div><strong id="home-progress-number">0%</strong><span>concluído</span></div></div><div class="journey-copy"><span class="mini-label">PRÓXIMA ETAPA</span><h4 id="next-lesson-title">Introdução ao Processamento de Linguagem Natural</h4><p id="next-lesson-description">Descubra o que é PLN e por que a linguagem humana desafia os computadores.</p><button class="btn btn-secondary" data-go="trail">Retomar aprendizagem <span>→</span></button></div></div></section>
+            <section class="panel stats-panel"><div class="eyebrow">SEU DESEMPENHO</div><h3>Pequenos passos, repertório crescente.</h3><div class="stat-row"><div class="stat-icon">✦</div><div><strong id="home-xp">0</strong><span>pontos de experiência</span></div></div><div class="stat-row"><div class="stat-icon">✓</div><div><strong id="home-units">0 / 24</strong><span>unidades concluídas</span></div></div><div class="stat-row"><div class="stat-icon">⌑</div><div><strong id="home-badges">0</strong><span>conquistas desbloqueadas</span></div></div></section>
+          </div>
+          <div class="notice-bar"><span class="notice-icon">i</span><p><strong>Sobre este laboratório:</strong> as ferramentas são demonstrações pedagógicas executadas no navegador. Heurísticas didáticas não equivalem a modelos treinados de PLN. Os limites de cada experimento são informados na própria ferramenta.</p><button data-go="library" aria-label="Consultar referências">Referências ↗</button></div>
+        </section>
+
+        <section class="view" id="view-explore" aria-labelledby="explore-title">
+          <div class="page-intro"><div class="eyebrow">MAPA DE CONHECIMENTO</div><h1 id="explore-title">Explore o PLN<span class="title-period">.</span></h1><p>Um mapa de conceitos para compreender como a linguagem é descrita, representada e processada computacionalmente.</p></div>
+          <div class="search-field"><span>⌕</span><input id="concept-search" type="search" placeholder="Buscar conceitos, métodos ou aplicações..." aria-label="Buscar conteúdos"><kbd>⌘ K</kbd></div>
+          <div class="filter-row" id="concept-filters"><button class="filter-chip active" data-filter="all">Todos os temas</button><button class="filter-chip" data-filter="linguagem">Linguagem</button><button class="filter-chip" data-filter="processamento">Processamento</button><button class="filter-chip" data-filter="modelos">Modelos</button><button class="filter-chip" data-filter="aplicacoes">Aplicações</button><button class="filter-chip" data-filter="etica">Ética</button></div>
+          <div class="concept-grid" id="concept-grid"></div>
+        </section>
+
+        <section class="view" id="view-trail" aria-labelledby="trail-title">
+          <div class="page-intro trail-intro"><div class="eyebrow"><span class="eyebrow-line"></span> PERCURSO FORMATIVO · 8 SETORES</div><h1 id="trail-title">Do texto à inteligência<span class="title-period">.</span></h1><p>Uma jornada de investigação: avance por missões, experimente conceitos e descubra como sistemas computacionais trabalham com a linguagem.</p><div class="trail-summary"><div><strong id="trail-progress">0%</strong><span>progresso geral</span></div><div><strong>24</strong><span>unidades de aprendizagem</span></div><div><strong>~24h</strong><span>carga horária estimada</span></div></div></div>
+          <div class="trail-mission-banner">
+            <div class="trail-companion-wrap"><img src="assets/mascot-nex.svg" alt="Nex, mascote do NLP Lab" class="trail-companion"><span class="companion-orbit orbit-one"></span><span class="companion-orbit orbit-two"></span></div>
+            <div class="trail-banner-copy"><span class="banner-kicker">GUIA DE MISSÃO // NEX</span><h2>Olá, pesquisador(a). Vamos decodificar a linguagem?</h2><p>Seu caminho está mapeado. Cada portal libera um novo conjunto de ferramentas para investigar o PLN.</p></div>
+            <div class="trail-banner-status"><span class="status-label">STATUS DA JORNADA</span><strong id="trail-banner-status">SETOR 01 · DISPONÍVEL</strong><span class="banner-live-dot"></span></div>
+          </div>
+          <div class="trail-layout"><div class="path-column"><div class="path-section-heading"><div><span class="banner-kicker">MAPA DE PROGRESSÃO</span><h2>Escolha seu próximo portal</h2><p>Complete as três unidades de cada setor para abrir o próximo.</p></div><div class="path-legend"><span><i class="legend-dot current"></i> Atual</span><span><i class="legend-dot locked"></i> Bloqueado</span><span><i class="legend-dot done"></i> Concluído</span></div></div><div class="module-list" id="module-list" aria-label="Caminho de aprendizagem com oito setores"></div></div><aside class="trail-aside"><div class="panel mission-panel"><div class="eyebrow">PROTOCOLO DE MISSÃO</div><div class="mission-mascot-row"><img src="assets/mascot-nex.svg" alt="" class="mission-mascot"><div><h3>Investigue. Teste. Conecte.</h3><span class="mission-tag">NEX · SEU COMPANHEIRO DIGITAL</span></div></div><p>Você foi convocado para explorar como sistemas computacionais representam, analisam e geram linguagem humana.</p><div class="mission-rule"><span>✦</span> Conquiste XP ao demonstrar aprendizagem.</div><div class="mission-rule"><span>◈</span> Desbloqueie setores progressivamente.</div><div class="mission-rule"><span>✓</span> Experimente antes de avançar.</div></div><div class="panel badge-panel"><div class="panel-heading"><h3>Conquistas</h3><span class="pill pill-neutral" id="badge-count">0/8</span></div><div id="badge-preview" class="badge-preview"></div></div><div class="panel side-quest-panel"><span class="banner-kicker">MISSÃO EXTRA</span><h3>Laboratório aberto</h3><p>Saia do mapa e teste operações de PLN com suas próprias frases.</p><button class="btn btn-secondary" data-go="lab">Abrir experimentos ↗</button></div></aside></div>
+          <div id="lesson-panel" class="lesson-panel" hidden></div>
+        </section>
+
+        <section class="view" id="view-lab" aria-labelledby="lab-title">
+          <div class="page-intro"><div class="eyebrow">AMBIENTE DE EXPERIMENTAÇÃO</div><h1>Laboratório de PLN<span class="title-period">.</span></h1><p>Altere os textos, execute operações e observe como diferentes técnicas transformam dados linguísticos.</p></div>
+          <div class="lab-disclaimer"><span>⚗</span><div><strong>Experimentos pedagógicos locais</strong><p>Os algoritmos desta seção são implementações didáticas em JavaScript. Eles ilustram princípios e limites; não substituem pipelines treinados, analisadores linguísticos ou modelos neurais de PLN.</p></div></div>
+          <div class="lab-tabs" role="tablist" aria-label="Experimentos do laboratório"><button class="lab-tab active" role="tab" aria-selected="true" data-lab="tokenizer">01 · Tokenização</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="text-tools">02 · Texto</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="ngrams">03 · N-gramas</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="tfidf">04 · TF-IDF</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="entities">05 · Entidades</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="sentiment">06 · Sentimento</button><button class="lab-tab" role="tab" aria-selected="false" data-lab="ambiguity">07 · Ambiguidade</button></div>
+          <div class="lab-workspace" id="lab-workspace"></div>
+        </section>
+
+        <section class="view" id="view-library" aria-labelledby="library-title">
+          <div class="page-intro"><div class="eyebrow">REPERTÓRIO E FONTES</div><h1>Biblioteca<span class="title-period">.</span></h1><p>Um espaço de consulta para termos, leituras e ferramentas que acompanham o percurso de aprendizagem.</p></div>
+          <div class="library-layout"><section class="panel glossary-panel"><div class="panel-heading"><div><div class="eyebrow">CONSULTA RÁPIDA</div><h3>Glossário de PLN</h3></div><span class="pill pill-neutral">20 termos</span></div><input id="glossary-search" class="input-control" type="search" placeholder="Buscar um termo..." aria-label="Buscar no glossário"><div class="glossary-list" id="glossary-list"></div></section><aside class="panel references-panel"><div class="eyebrow">PARA APROFUNDAR</div><h3>Referências essenciais</h3><p>Livros, artigos e documentação técnica utilizados como base para os conteúdos do laboratório.</p><div id="reference-list" class="reference-list"></div></aside></div>
+        </section>
+
+        <section class="view" id="view-progress" aria-labelledby="progress-title">
+          <div class="page-intro"><div class="eyebrow">PAINEL DE APRENDIZAGEM</div><h1>Seu progresso<span class="title-period">.</span></h1><p>Acompanhe as unidades concluídas, conquistas e resultados das suas atividades neste dispositivo.</p></div>
+          <div class="progress-overview"><div class="panel level-card"><div class="eyebrow">NÍVEL ATUAL</div><div class="level-display"><div class="level-medal">✦</div><div><strong id="progress-level">1</strong><span id="progress-level-name">Explorador</span></div></div><div class="xp-track large"><div class="xp-fill" id="progress-xp-fill"></div></div><div class="progress-card-bottom"><span id="progress-current-xp">0 XP</span><span id="progress-next-xp">100 XP para o próximo nível</span></div></div><div class="panel completion-card"><div class="eyebrow">CONCLUSÃO DA TRILHA</div><div class="completion-number" id="progress-percent">0%</div><div class="large-track"><div id="progress-track-fill"></div></div><p id="progress-units-label">0 de 24 unidades concluídas</p></div></div>
+          <div class="progress-columns"><section class="panel"><div class="panel-heading"><h3>Conquistas</h3><span class="pill pill-neutral" id="all-badge-count">0 desbloqueadas</span></div><div class="achievement-grid" id="achievement-grid"></div></section><section class="panel"><div class="panel-heading"><h3>Atividades do laboratório</h3><button class="text-link" id="reset-lab">Reiniciar marcas</button></div><div id="lab-achievements" class="lab-achievements"></div></section></div>
+          <div class="reset-row"><p>Seu progresso fica salvo apenas neste navegador. Você pode reiniciar a jornada quando quiser.</p><button class="btn btn-danger-ghost" id="reset-progress">Reiniciar todo o progresso</button></div>
+        </section>
+      </main>
+      <footer class="site-footer"><div><span class="footer-brand">NLP<span>LAB</span></span><p>Um laboratório autoral para explorar linguagem e inteligência artificial.</p></div><div class="footer-right"><span>Conteúdo educacional · Português brasileiro</span><span>Projeto demonstrativo independente · 2026</span></div></footer>
+    </div>
+  </div>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="info-dialog" class="info-dialog"><div class="dialog-top"><span class="eyebrow">SOBRE O PROJETO</span><button class="icon-button" id="close-dialog" aria-label="Fechar">×</button></div><h2>NLP Lab</h2><p>Projeto educacional autoral que integra fundamentos de Linguística, Processamento de Linguagem Natural, Design Educacional e tecnologias web.</p><p>As atividades e experimentos são demonstrações pedagógicas. Não há conta de usuário, servidor, modelo de IA conectado ou emissão de certificado institucional.</p><a href="documentation/concepcao.md" target="_blank" rel="noopener">Consultar documentação do projeto ↗</a></dialog>
+  <script src="js/content.js"></script>
+  <script src="js/labs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
